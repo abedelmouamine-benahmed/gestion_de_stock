@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-class Connection:
+class connection:
 
     def __init__(self):
         
@@ -42,4 +42,4 @@ class Connection:
         self.mydb.close()
 
 
-Connect = Connection()
+Connect = connection()
