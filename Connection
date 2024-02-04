@@ -14,7 +14,7 @@ class Connection:
         self.__user = os.getenv('user') 
         self.__password = os.getenv('passwd')
         self.__database = os.getenv('database')
-        *
+        
     
     def _inventory_(self):
         try: 
@@ -35,5 +35,6 @@ class Connection:
     def _close_(self):
         self.cursor.close()
         self.mydb.close()
-    
+
+
 Connect = Connection()
