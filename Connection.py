@@ -15,7 +15,10 @@ class Connection:
         self.__password = os.getenv('passwd')
         self.__database = os.getenv('database')
         
-    
+        
+        
+
+
     def _inventory_(self):
         try: 
             self.mydb = mysql.connector.connect(
@@ -36,5 +39,5 @@ class Connection:
         self.cursor.close()
         self.mydb.close()
 
-
-Connect = Connection()
+if __name__ == '__name__':
+    Connection().run()
